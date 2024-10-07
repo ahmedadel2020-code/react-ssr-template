@@ -43,7 +43,7 @@ spec:
           ui:field: RepoUrlPicker
           ui:options:
             allowedHosts:
-              - github-ri.vnet.valeo.com
+              - github-ri.vnet.valeo.com/GROUP-AI4ALL
   steps:
     - id: template
       name: Fetch Skeleton + Template
@@ -62,7 +62,7 @@ spec:
       name: Publish
       action: publish:github
       input:
-        allowedHosts: ["github-ri.vnet.valeo.com"]
+        allowedHosts: ["github-ri.vnet.valeo.com/GROUP-AI4ALL"]
         description: This is ${{ parameters.component_id }}
         repoUrl: ${{ parameters.repoUrl }}
         insecureSsl: true
